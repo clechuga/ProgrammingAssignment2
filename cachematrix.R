@@ -17,7 +17,6 @@ makeCacheMatrix <- function (x = matrix()) {
         ## (2) getting the value of the matrix
         get <- function() x
         ## (3-4) setting and getting the cached value of the inverse
-        ## This is done by using the R function solve() to invert the matrix
         setinv <- function(solve) inv <<- solve
         getinv <- function() inv
         list(set = set, get = get, setinv = setinv, getinv = getinv)
